@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Painel Operador - Cabine</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <main>
+    <h1>Operador</h1>
+    <button id="createSession">Criar sessão</button>
+    <div id="sessionInfo"></div>
+    <div id="gallery" style="display:flex;flex-wrap:wrap;"></div>
+    <div style="margin-top:12px;">
+      <button id="uploadAll">Upload para ImgBB</button>
+      <button id="finalizar">Finalizar Sessão</button>
+      <button id="clearGallery">Limpar Fotos</button>
+    </div>
+    <pre id="logs" style="height:200px;overflow:auto;background:#111;color:#0f0;padding:8px;"></pre>
+  </main>
+<script src="/js/ws-client.js"></script>
+<script src="/js/index.js"></script>
+</body>
+</html>

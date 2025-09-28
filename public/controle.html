@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+<title>Cabine - Controle</title>
+<link rel="stylesheet" href="/assets/styles.css">
+</head>
+<body>
+  <div id="app" style="height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;">
+    <div id="cameraWrap" style="position:relative;width:100%;max-width:480px;">
+      <video id="video" autoplay playsinline style="width:100%;border-radius:12px;background:#000;"></video>
+      <canvas id="capture" style="display:none"></canvas>
+      <div id="overlay" style="position:absolute;inset:0;pointer-events:none;"></div>
+      <button id="startBtn" class="pulse" style="position:absolute;left:50%;transform:translateX(-50%);bottom:18px;padding:14px 20px;border-radius:28px;">Toque para iniciar</button>
+      <div id="countdown" style="display:none;position:absolute;left:50%;transform:translateX(-50%);top:18px;font-size:48px;color:white;text-shadow:0 2px 6px rgba(0,0,0,0.7)"></div>
+    </div>
+  </div>
+<script src="/js/ws-client.js"></script>
+<script src="/js/controle.js"></script>
+</body>
+</html>
